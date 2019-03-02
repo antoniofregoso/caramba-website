@@ -1,0 +1,300 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* website_blog_post_right_column
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 11.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-05-07 03:58+0000\n"
+"PO-Revision-Date: 2018-05-07 00:00-0500\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: \n"
+"Language: es_MX\n"
+"X-Generator: Poedit 2.0.4\n"
+
+#. module: website_blog_post_right_column
+#: model:ir.ui.view,arch_db:website_blog_post_right_column.opt_blog_rc_about_us
+msgid "About us"
+msgstr "Acerca de"
+
+#. module: website_blog_post_right_column
+#: model:ir.model.fields,field_description:website_blog_post_right_column.field_blog_blog_cc_share
+msgid "Allow adaptations"
+msgstr "Permitir adaptaciones"
+
+#. module: website_blog_post_right_column
+#: model:ir.model.fields,help:website_blog_post_right_column.field_blog_blog_cc_share
+msgid "Allow adaptations of your work to be shared?"
+msgstr "¿Permites que las adaptaciones de tu trabajo sean compartidas?"
+
+#. module: website_blog_post_right_column
+#: model:ir.model.fields,help:website_blog_post_right_column.field_blog_blog_cc_commercial
+msgid "Allow commercial uses of your work?"
+msgstr "¿Permites el uso comercial de tu trabajo?"
+
+#. module: website_blog_post_right_column
+#: model:ir.model.fields,field_description:website_blog_post_right_column.field_blog_blog_cc_metadata_attribution
+msgid "Attribution"
+msgstr "Attribución"
+
+#. module: website_blog_post_right_column
+#: selection:blog.blog,cc_metadata_attribution:0
+msgid "Author"
+msgstr "Autor"
+
+#. module: website_blog_post_right_column
+#: selection:blog.blog,schema:0
+msgid "Blog"
+msgstr "Blog"
+
+#. module: website_blog_post_right_column
+#: model:ir.model,name:website_blog_post_right_column.model_blog_post
+msgid "Blog Post"
+msgstr "Entrada del blog"
+
+#. module: website_blog_post_right_column
+#: model:base.automation,name:website_blog_post_right_column.create_blog_posts_thumbnails
+#: model:ir.actions.server,name:website_blog_post_right_column.create_blog_posts_thumbnails_ir_actions_server
+msgid "Blog Post: Create Images"
+msgstr "Publicación del blog: Crear imágenes"
+
+#. module: website_blog_post_right_column
+#: model:ir.model,name:website_blog_post_right_column.model_blog_blog
+msgid "Blogs"
+msgstr "Blogs"
+
+#. module: website_blog_post_right_column
+#: selection:blog.blog,schema:0
+msgid "Book"
+msgstr "Libro"
+
+#. module: website_blog_post_right_column
+#: model:ir.ui.view,arch_db:website_blog_post_right_column.view_blog_blog_form_cc
+msgid "Carousel"
+msgstr "Carrusel"
+
+#. module: website_blog_post_right_column
+#: model:ir.model.fields,field_description:website_blog_post_right_column.field_blog_blog_video_c
+msgid "Carousel Videos"
+msgstr "Videos de carrusel"
+
+#. module: website_blog_post_right_column
+#: model:ir.model.fields,field_description:website_blog_post_right_column.field_blog_blog_video_channel
+msgid "Channel URL"
+msgstr "URL del canal"
+
+#. module: website_blog_post_right_column
+#: model:ir.model.fields,field_description:website_blog_post_right_column.field_blog_blog_cc_commercial
+msgid "Commercial uses"
+msgstr "Usos comerciales"
+
+#. module: website_blog_post_right_column
+#: model:ir.model.fields,field_description:website_blog_post_right_column.field_blog_blog_cc_compact_icon
+msgid "Compact icon"
+msgstr "Icono compacto"
+
+#. module: website_blog_post_right_column
+#: selection:blog.blog,cc_metadata_attribution:0
+msgid "Company"
+msgstr "Empresa"
+
+#. module: website_blog_post_right_column
+#: model:ir.ui.view,arch_db:website_blog_post_right_column.opt_creative_commons
+msgid "Copyright"
+msgstr "Derechos de autor"
+
+#. module: website_blog_post_right_column
+#: model:ir.ui.view,arch_db:website_blog_post_right_column.view_blog_blog_form_cc
+msgid "Creative Commons"
+msgstr "Creative Commons"
+
+#. module: website_blog_post_right_column
+#: code:addons/website_blog_post_right_column/models/blog_post.py:33
+#, python-format
+msgid "Creative Commons Attribution 4.0 International License"
+msgstr "Creative Commons Attribution 4.0 Licencia internacional"
+
+#. module: website_blog_post_right_column
+#: code:addons/website_blog_post_right_column/models/blog_post.py:46
+#, python-format
+msgid "Creative Commons Attribution- NonCommercial 4.0 International License"
+msgstr "Creative Commons Attribution- NonCommercial 4.0  Licencia internacional"
+
+#. module: website_blog_post_right_column
+#: code:addons/website_blog_post_right_column/models/blog_post.py:54
+#, python-format
+msgid "Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License"
+msgstr "Creative Commons Attribution-NonCommercial-ShareAlike 4.0  Licencia internacional"
+
+#. module: website_blog_post_right_column
+#: code:addons/website_blog_post_right_column/models/blog_post.py:50
+#, python-format
+msgid "Creative Commons Attribution-NonCommercial-WithoutDerive 4.0 International License"
+msgstr "Creative Commons Attribution-NonCommercial-WithoutDerive 4.0  Licencia internacional"
+
+#. module: website_blog_post_right_column
+#: code:addons/website_blog_post_right_column/models/blog_post.py:41
+#, python-format
+msgid "Creative Commons Attribution-ShareAlike 4.0 International License"
+msgstr "Creative Commons Attribution-ShareAlike 4.0  Licencia internacional"
+
+#. module: website_blog_post_right_column
+#: code:addons/website_blog_post_right_column/models/blog_post.py:37
+#, python-format
+msgid "Creative Commons Attribution-WithoutDerive 4.0 International License"
+msgstr "Creative Commons Attribution-WithoutDerive 4.0  Licencia internacional"
+
+#. module: website_blog_post_right_column
+#: model:ir.model.fields,help:website_blog_post_right_column.field_blog_blog_cc_metadata_attribution
+msgid "Do you want to include attribution for the author?"
+msgstr "¿Quieres incluir la atribución para el autor?"
+
+#. module: website_blog_post_right_column
+#: model:ir.model.fields,help:website_blog_post_right_column.field_blog_blog_cc_metadata_title
+msgid "Do you want to include title of work?"
+msgstr "¿Quieres incluir el título del trabajo?"
+
+#. module: website_blog_post_right_column
+#: model:ir.ui.view,arch_db:website_blog_post_right_column.opt_creative_commons
+msgid "Licence Creative Commons"
+msgstr "Licencia Creative Commons"
+
+#. module: website_blog_post_right_column
+#: model:ir.ui.view,arch_db:website_blog_post_right_column.view_blog_blog_form_cc
+msgid "License"
+msgstr "Licencia"
+
+#. module: website_blog_post_right_column
+#: model:ir.ui.view,arch_db:website_blog_post_right_column.view_blog_blog_form_cc
+msgid "Metadata"
+msgstr "Metadatos"
+
+#. module: website_blog_post_right_column
+#: model:ir.model.fields,field_description:website_blog_post_right_column.field_blog_blog_most_read
+#: model:ir.model.fields,field_description:website_blog_post_right_column.field_blog_blog_most_read_c
+#: model:ir.ui.view,arch_db:website_blog_post_right_column.opt_blog_post_most_carousel
+#: model:ir.ui.view,arch_db:website_blog_post_right_column.opt_post_rc_most
+#: model:ir.ui.view,arch_db:website_blog_post_right_column.opt_post_rc_most_big
+#: model:ir.ui.view,arch_db:website_blog_post_right_column.opt_post_rc_most_tmb
+msgid "Most Read"
+msgstr "Mas Leidos"
+
+#. module: website_blog_post_right_column
+#: selection:blog.blog,cc_metadata_attribution:0 selection:blog.blog,cc_share:0
+msgid "No"
+msgstr "No"
+
+#. module: website_blog_post_right_column
+#: model:ir.model.fields,help:website_blog_post_right_column.field_blog_blog_cc_compact_icon
+msgid "Normal icon: 88x31 px, compact icon: 80x15 px"
+msgstr "Icono normal: 88x31 px, icono compacto: 80x15 px"
+
+#. module: website_blog_post_right_column
+#: model:ir.model.fields,help:website_blog_post_right_column.field_blog_blog_video_c
+msgid "Number of YouTube/Vimeo videos."
+msgstr "Cantidad de videos de YouTube / Vimeo."
+
+#. module: website_blog_post_right_column
+#: model:ir.ui.view,arch_db:website_blog_post_right_column.opt_blog-post_rc_follow_us
+msgid "Participate on our social stream."
+msgstr "Participa en nuestra corriente social."
+
+#. module: website_blog_post_right_column
+#: model:ir.model.fields,help:website_blog_post_right_column.field_blog_blog_most_read_c
+#: model:ir.model.fields,help:website_blog_post_right_column.field_blog_blog_related_c
+msgid "Post number shown on the carousel list."
+msgstr "Número de publicaciones que se muestra en la lista de carrusel."
+
+#. module: website_blog_post_right_column
+#: model:ir.model.fields,help:website_blog_post_right_column.field_blog_blog_most_read
+#: model:ir.model.fields,help:website_blog_post_right_column.field_blog_blog_related
+msgid "Post number shown on the list."
+msgstr "Posts number shown on the list."
+
+#. module: website_blog_post_right_column
+#: model:ir.ui.view,arch_db:website_blog_post_right_column.view_blog_blog_form_cc
+msgid "Posts Lists"
+msgstr "Listas de Artículos"
+
+#. module: website_blog_post_right_column
+#: model:ir.model.fields,field_description:website_blog_post_right_column.field_blog_blog_related
+#: model:ir.model.fields,field_description:website_blog_post_right_column.field_blog_blog_related_c
+msgid "Related Posts"
+msgstr "Artículos Relacionados"
+
+#. module: website_blog_post_right_column
+#: model:ir.ui.view,arch_db:website_blog_post_right_column.opt_blog_post_rc_carousel
+#: model:ir.ui.view,arch_db:website_blog_post_right_column.opt_post_rc_related
+#: model:ir.ui.view,arch_db:website_blog_post_right_column.opt_post_rc_related_big
+#: model:ir.ui.view,arch_db:website_blog_post_right_column.opt_post_rc_related_tmb
+msgid "Related Topics"
+msgstr "Temas relacionados"
+
+#. module: website_blog_post_right_column
+#: model:ir.ui.view,arch_db:website_blog_post_right_column.view_blog_blog_form_cc
+msgid "Right Column"
+msgstr "Columna Derecha"
+
+#. module: website_blog_post_right_column
+#: model:ir.model.fields,field_description:website_blog_post_right_column.field_blog_blog_schema
+msgid "Schema"
+msgstr "Esquema"
+
+#. module: website_blog_post_right_column
+#: model:ir.ui.view,arch_db:website_blog_post_right_column.opt_blog-post_rc_follow_us
+msgid "Stay updated"
+msgstr "Mantente actualizado"
+
+#. module: website_blog_post_right_column
+#: model:ir.ui.view,arch_db:website_blog_post_right_column.opt_creative_commons
+msgid "This work"
+msgstr "Este trabajo"
+
+#. module: website_blog_post_right_column
+#: model:ir.model.fields,field_description:website_blog_post_right_column.field_blog_blog_cc_metadata_title
+msgid "Title"
+msgstr "Título"
+
+#. module: website_blog_post_right_column
+#: model:ir.ui.view,arch_db:website_blog_post_right_column.view_blog_blog_form_cc
+msgid "Video"
+msgstr "Vídeo"
+
+#. module: website_blog_post_right_column
+#: selection:blog.blog,schema:0
+msgid "Web Site"
+msgstr "Sitio web"
+
+#. module: website_blog_post_right_column
+#: model:ir.ui.view,arch_db:website_blog_post_right_column.opt_blog_rc_about_us
+msgid ""
+"Write a small text here for when <b>new visitors</b> find your website\n"
+"            through your <b>blog entries</b>, referenced in Google."
+msgstr ""
+"Escriba aquí un pequeño texto para cuando <b> nuevos visitantes </ b> encuentren su sitio web\n"
+"             a través de sus <b> entradas de blog </ b>, a las que se hace referencia en Google."
+
+#. module: website_blog_post_right_column
+#: selection:blog.blog,cc_share:0
+msgid "Yes"
+msgstr "Si"
+
+#. module: website_blog_post_right_column
+#: selection:blog.blog,cc_share:0
+msgid "Yes, as long as others share alike "
+msgstr "Sí, siempre y cuando otros compartan igual"
+
+#. module: website_blog_post_right_column
+#: model:ir.ui.view,arch_db:website_blog_post_right_column.opt_creative_commons
+msgid "by"
+msgstr "por"
+
+#. module: website_blog_post_right_column
+#: model:ir.ui.view,arch_db:website_blog_post_right_column.opt_creative_commons
+msgid "is licensed under a<br/>"
+msgstr "tiene licencia bajo <br/>"

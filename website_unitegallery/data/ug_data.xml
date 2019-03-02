@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+	<data noupdate="1">
+		<record id="default_gallery" model="website.unitegallery">
+            <field name="name">Default Gallery</field>
+        </record>
+        <record id="default_carousel" model="website.unitegallery.carousel">
+            <field name="name">Default Carousel</field>
+            <field name="gallery_id" ref="default_gallery"/>
+        </record>
+        <record id="default_compact" model="website.unitegallery.compact">
+            <field name="name">Default Compact</field>
+            <field name="gallery_id" ref="default_gallery"/>
+        </record>
+        <record id="default_default" model="website.unitegallery.default">
+            <field name="name">Default Default</field>
+            <field name="gallery_id" ref="default_gallery"/>
+        </record>
+        <record id="defaul_grid" model="website.unitegallery.grid">
+            <field name="name">Default Grid</field>
+            <field name="gallery_id" ref="default_gallery"/>
+        </record>
+        <record id="default_slider" model="website.unitegallery.slider">
+            <field name="name">Default Slider</field>
+            <field name="gallery_id" ref="default_gallery"/>
+        </record>
+        <record id="default_tiles" model="website.unitegallery.tiles">
+            <field name="name">Default Tiles</field>
+            <field name="gallery_id" ref="default_gallery"/>
+        </record>
+        <record id="default_tiles_grid" model="website.unitegallery.tilesgrid">
+            <field name="name">Default Tiles Grid</field>
+            <field name="gallery_id" ref="default_gallery"/>
+        </record>
+        <record id="default_video" model="website.unitegallery.video">
+            <field name="name">Default Video</field>
+            <field name="gallery_id" ref="default_gallery"/>
+        </record>
+        <record id="website.default_website" model="website">
+        	 <field name="unitegallery_id" ref="default_gallery"/>
+        </record>
+        
+        
+	
+	</data>
+</odoo>

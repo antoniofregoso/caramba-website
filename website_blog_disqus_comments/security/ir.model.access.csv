@@ -1,0 +1,2 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_website_blog_disqus_comments_website_blog_disqus_comments,website_blog_disqus_comments.website_blog_disqus_comments,model_website_blog_disqus_comments_website_blog_disqus_comments,,1,0,0,0

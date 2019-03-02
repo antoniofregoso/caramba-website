@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--  License LGPL-3.0 or later (http://www.gnu.org/licenses/lgpl.html). -->
+<odoo>
+        <record id="res_config_settings_view_form" model="ir.ui.view">
+            <field name="name">res.config.settings.view.form.inherit.blog</field>
+            <field name="model">res.config.settings</field>
+            <field name="priority" eval="20"/>
+            <field name="inherit_id" ref="website.res_config_settings_view_form"/>
+            <field name="arch" type="xml">
+            	<div id="google_maps_setting" position="after">
+            		<div class="col-xs-12 col-md-6 o_setting_box" id="Disqus Comments">
+            			<div class="o_setting_right_pane">
+            				<label name="discus" string="Disqus"/>
+	                 	 		<div class="content-group">
+	                 	 		<label class="col-md-3 o_light_label" string="Subdomain" />
+	                 	 		<field name="disqus_website" />
+                            </div>
+            			</div>
+            		</div>
+            	</div>            
+            </field>
+        </record>
+
+
+</odoo>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+        <template id="assets_frontend" inherit_id="web.assets_frontend" name="Whatsapp Assets">
+		    <xpath expr="//link[last()]" position="after">
+		        <link rel="stylesheet" href="/website_floating_whatsapp/static/src/css/floating-wpp.css"/>
+		    </xpath>
+		    <xpath expr="//script[last()]" position="after">
+		        <script type="text/javascript" src="/website_floating_whatsapp/static/src/js/floating-wpp.min.js"/>
+		    </xpath>
+		</template>
+		
+		 <template id="floating_watsapp" inherit_id="portal.frontend_layout" name="Whatsapp button">
+		 	<xpath expr="//div[@id='wrapwrap']" position="after">
+		 		<div id="WhatsAppButton"></div>
+		 		<t t-raw="website.get_whatsapp()" />
+		 	</xpath>
+		 </template>
+		
+</odoo>
