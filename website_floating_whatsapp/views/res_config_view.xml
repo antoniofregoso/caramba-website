@@ -10,9 +10,14 @@
             <field name="arch" type="xml">            	
             	<xpath expr="//div[@id='social_default_image_setting']" position="before">
             		 <div class="col-12 col-lg-6 o_setting_box" id="whatsapp" title="Whatsapp">
-            		 	<div class="o_setting_left_pane">
-            		 	</div>
-            		 	<div class="o_setting_right_pane">  
+            		 	<div class="o_setting_right_pane"> 
+            		 		<label string="WhatsApp" for="floating_whatsapp_id"/> 
+            		 		 <div class="text-muted">
+                                 Floating button for WhatsApp
+                            </div>
+                            <div class="mt8">
+                            	<field name="floating_whatsapp_id" widget="selection"/>
+                            </div>
             		 	</div>
                      </div>     
             	</xpath>    
