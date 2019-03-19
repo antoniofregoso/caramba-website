@@ -1,0 +1,292 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* website_blog_category_and_author
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 12.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-03-19 04:36+0000\n"
+"PO-Revision-Date: 2019-03-18 22:42-0600\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: \n"
+"Language: es_MX\n"
+"X-Generator: Poedit 2.0.6\n"
+
+#. module: website_blog_category_and_author
+#: selection:blog.category,schema:0
+msgid "***Analysis News Article"
+msgstr "***Análisis de noticias"
+
+#. module: website_blog_category_and_author
+#: selection:blog.category,schema:0
+msgid "***Background News Article"
+msgstr "***Artículo de fondo"
+
+#. module: website_blog_category_and_author
+#: selection:blog.category,schema:0
+msgid "***Opinion News Article"
+msgstr "***Artículo de opinión"
+
+#. module: website_blog_category_and_author
+#: selection:blog.category,schema:0
+msgid "***Reportage News Article"
+msgstr "***Reportaje"
+
+#. module: website_blog_category_and_author
+#: selection:blog.category,schema:0
+msgid "***Review News Article"
+msgstr "***Reseña"
+
+#. module: website_blog_category_and_author
+#: selection:blog.category,schema:0
+msgid "**Analysis News Article"
+msgstr "**Análisis artículo de noticias"
+
+#. module: website_blog_category_and_author
+#: selection:blog.category,schema:0
+msgid "**Blog Posting"
+msgstr "**Entrada de Blog"
+
+#. module: website_blog_category_and_author
+#: selection:blog.category,schema:0
+msgid "**News Article"
+msgstr "**Noticias"
+
+#. module: website_blog_category_and_author
+#: selection:blog.category,schema:0
+msgid "**Satirical Article"
+msgstr "**Artículo Satírico"
+
+#. module: website_blog_category_and_author
+#: selection:blog.category,schema:0
+msgid "**Scholarly Article"
+msgstr "**Trabajo Escolar"
+
+#. module: website_blog_category_and_author
+#: selection:blog.category,schema:0
+msgid "**Tech Article"
+msgstr "**Artículo sobre Tecnología"
+
+#. module: website_blog_category_and_author
+#: selection:blog.category,schema:0
+msgid "*Article"
+msgstr "*Artículo"
+
+#. module: website_blog_category_and_author
+#: selection:blog.category,schema:0
+msgid "*Review"
+msgstr "*Reseña"
+
+#. module: website_blog_category_and_author
+#: selection:blog.category,schema:0
+msgid "*Social Media Posting"
+msgstr "*Actualización en Medios Sociales"
+
+#. module: website_blog_category_and_author
+#: model:ir.model.fields,field_description:website_blog_category_and_author.field_blog_category__all_post_ids
+#: model_terms:ir.ui.view,arch_db:website_blog_category_and_author.blog_category_template
+msgid "All Posts"
+msgstr "Todos los Artículos"
+
+#. module: website_blog_category_and_author
+#: model_terms:ir.ui.view,arch_db:website_blog_category_and_author.blog_category_view_form
+msgid "All Posts (Including Children)"
+msgstr "Todos los artículos (incluidos los niños)"
+
+#. module: website_blog_category_and_author
+#: model:ir.model.fields,field_description:website_blog_category_and_author.field_blog_category__blog_id
+msgid "Blog"
+msgstr ""
+
+#. module: website_blog_category_and_author
+#: model:ir.actions.act_window,name:website_blog_category_and_author.blog_category_action
+#: model:ir.ui.menu,name:website_blog_category_and_author.blog_category_menu
+#: model_terms:ir.ui.view,arch_db:website_blog_category_and_author.blog_category_view_tree
+msgid "Blog Categories"
+msgstr "Categorías de blog"
+
+#. module: website_blog_category_and_author
+#: model:ir.model,name:website_blog_category_and_author.model_blog_category
+#: model_terms:ir.ui.view,arch_db:website_blog_category_and_author.blog_category_view_form
+msgid "Blog Category"
+msgstr "Categoría de blog"
+
+#. module: website_blog_category_and_author
+#: model:ir.model,name:website_blog_category_and_author.model_blog_post
+msgid "Blog Post"
+msgstr "Entrada del blog"
+
+#. module: website_blog_category_and_author
+#: model:ir.model,name:website_blog_category_and_author.model_blog_blog
+msgid "Blogs"
+msgstr ""
+
+#. module: website_blog_category_and_author
+#: model:blog.category,name:website_blog_category_and_author.blog_category_cms
+msgid "CMS"
+msgstr ""
+
+#. module: website_blog_category_and_author
+#: code:addons/website_blog_category_and_author/models/blog_category.py:74
+#, python-format
+msgid "Cannot assign a parent/child relationship between categories in disparate blogs."
+msgstr "No se puede asignar una relación padre / hijo entre categorías en blogs dispares."
+
+#. module: website_blog_category_and_author
+#: model:ir.model.fields,help:website_blog_category_and_author.field_blog_category__name
+msgid "Canonical"
+msgstr "Canónico"
+
+#. module: website_blog_category_and_author
+#: model_terms:ir.ui.view,arch_db:website_blog_category_and_author.blog_category_template
+#: model_terms:ir.ui.view,arch_db:website_blog_category_and_author.view_blog_blog_category
+msgid "Categories"
+msgstr "Categorías"
+
+#. module: website_blog_category_and_author
+#: sql_constraint:blog.category:0
+msgid "Category name already exists in this blog."
+msgstr "El nombre de la categoría ya existe en este blog."
+
+#. module: website_blog_category_and_author
+#: model:ir.model.fields,field_description:website_blog_category_and_author.field_blog_category__child_ids
+#: model_terms:ir.ui.view,arch_db:website_blog_category_and_author.blog_category_view_form
+msgid "Children"
+msgstr "Hijos"
+
+#. module: website_blog_category_and_author
+#: model:ir.model.fields,help:website_blog_category_and_author.field_blog_category__color
+msgid "Choose your color"
+msgstr "Elige tu color"
+
+#. module: website_blog_category_and_author
+#: model:ir.model.fields,field_description:website_blog_category_and_author.field_blog_category__color
+msgid "Color"
+msgstr ""
+
+#. module: website_blog_category_and_author
+#: model:ir.model,name:website_blog_category_and_author.model_res_partner
+msgid "Contact"
+msgstr "Contacto"
+
+#. module: website_blog_category_and_author
+#: model:ir.model.fields,field_description:website_blog_category_and_author.field_blog_category__create_uid
+msgid "Created by"
+msgstr "Creado por"
+
+#. module: website_blog_category_and_author
+#: model:ir.model.fields,field_description:website_blog_category_and_author.field_blog_category__create_date
+msgid "Created on"
+msgstr "Creado el"
+
+#. module: website_blog_category_and_author
+#: selection:blog.category,schema:0
+msgid "Creative Work"
+msgstr "Trabajo creativo"
+
+#. module: website_blog_category_and_author
+#: model_terms:ir.ui.view,arch_db:website_blog_category_and_author.blog_category_view_form
+msgid "Direct Posts"
+msgstr "Publicaciones directas"
+
+#. module: website_blog_category_and_author
+#: model:ir.model.fields,field_description:website_blog_category_and_author.field_blog_category__display_name
+msgid "Display Name"
+msgstr "Nombre a mostrar"
+
+#. module: website_blog_category_and_author
+#: model:ir.model.fields,field_description:website_blog_category_and_author.field_blog_category__id
+msgid "ID"
+msgstr ""
+
+#. module: website_blog_category_and_author
+#: model:ir.model.fields,field_description:website_blog_category_and_author.field_blog_category____last_update
+msgid "Last Modified on"
+msgstr "Última modificación en"
+
+#. module: website_blog_category_and_author
+#: model:ir.model.fields,field_description:website_blog_category_and_author.field_blog_category__write_uid
+msgid "Last Updated by"
+msgstr "Última actualización por"
+
+#. module: website_blog_category_and_author
+#: model:ir.model.fields,field_description:website_blog_category_and_author.field_blog_category__write_date
+msgid "Last Updated on"
+msgstr "Última actualización el"
+
+#. module: website_blog_category_and_author
+#: model:ir.model.fields,field_description:website_blog_category_and_author.field_blog_category__name
+msgid "Name"
+msgstr "Nombre"
+
+#. module: website_blog_category_and_author
+#: model:ir.model.fields,field_description:website_blog_category_and_author.field_blog_category__parent_id
+msgid "Parent"
+msgstr "Padre"
+
+#. module: website_blog_category_and_author
+#: model:ir.model.fields,field_description:website_blog_category_and_author.field_blog_category__post_count
+msgid "Post Count"
+msgstr "Recuento de entradas"
+
+#. module: website_blog_category_and_author
+#: model:ir.model.fields,field_description:website_blog_category_and_author.field_blog_category__post_ids
+msgid "Posts"
+msgstr "Entradas"
+
+#. module: website_blog_category_and_author
+#: model:ir.model.fields,field_description:website_blog_category_and_author.field_blog_category__is_seo_optimized
+msgid "SEO optimized"
+msgstr "SEO optimizado"
+
+#. module: website_blog_category_and_author
+#: model:ir.model.fields,field_description:website_blog_category_and_author.field_blog_category__schema
+msgid "Schema"
+msgstr "Esquema"
+
+#. module: website_blog_category_and_author
+#: model:ir.model.fields,field_description:website_blog_category_and_author.field_res_partner__semblance
+#: model:ir.model.fields,field_description:website_blog_category_and_author.field_res_users__semblance
+#: model_terms:ir.ui.view,arch_db:website_blog_category_and_author.view_partner_property_form
+msgid "Semblance"
+msgstr "Apariencia"
+
+#. module: website_blog_category_and_author
+#: model:blog.category,name:website_blog_category_and_author.blog_category_technology
+msgid "Technology"
+msgstr "Tecnología"
+
+#. module: website_blog_category_and_author
+#: model:ir.model.fields,field_description:website_blog_category_and_author.field_blog_blog__website_category_ids
+msgid "Website Categories"
+msgstr "Categorías del sitio web"
+
+#. module: website_blog_category_and_author
+#: model:ir.model.fields,field_description:website_blog_category_and_author.field_blog_post__website_category_id
+msgid "Website Category"
+msgstr "Categoría de sitio web"
+
+#. module: website_blog_category_and_author
+#: model:ir.model.fields,field_description:website_blog_category_and_author.field_blog_category__website_meta_description
+msgid "Website meta description"
+msgstr "Meta descripción del sitio web"
+
+#. module: website_blog_category_and_author
+#: model:ir.model.fields,field_description:website_blog_category_and_author.field_blog_category__website_meta_keywords
+msgid "Website meta keywords"
+msgstr "Meta palabras clave del sitio web"
+
+#. module: website_blog_category_and_author
+#: model:ir.model.fields,field_description:website_blog_category_and_author.field_blog_category__website_meta_title
+msgid "Website meta title"
+msgstr "Meta título del sitio web"
+
+#. module: website_blog_category_and_author
+#: model:ir.model.fields,field_description:website_blog_category_and_author.field_blog_category__website_meta_og_img
+msgid "Website opengraph image"
+msgstr "Imagen del opengraph del sitio web"
