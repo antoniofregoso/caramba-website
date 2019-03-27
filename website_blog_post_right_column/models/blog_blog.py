@@ -8,6 +8,7 @@ class Blog(models.Model):
     _inherit = ['blog.blog']
     
     schema = fields.Selection([('Blog','Blog'),('Book','Book'),('WebSite','Web Site')],'Schema', default='Blog')
+    cc_license = fields.Boolean('CC License', help='Active creative commons license', default=False)
     cc_share = fields.Selection([ ('by','Yes'), ('by-nd','No'), ('by-sa', 'Yes, as long as others share alike ')],'Allow adaptations', help='Allow adaptations of your work to be shared?', default='by-nd')
     cc_commercial = fields.Boolean('Commercial uses', help='Allow commercial uses of your work?', default=False)
     cc_metadata_title = fields.Boolean('Title', help='Do you want to include title of work?',  default=False)

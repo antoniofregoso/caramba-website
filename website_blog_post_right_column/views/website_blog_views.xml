@@ -29,6 +29,7 @@
   	<page string="Creative Commons" >
   		<group>
   		<group string="License">
+  		<field name="cc_license" />
   		<field name="cc_share" />
   		<field name="cc_commercial" />
   		<field name="cc_compact_icon" /> 
