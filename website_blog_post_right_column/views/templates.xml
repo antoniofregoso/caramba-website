@@ -116,7 +116,7 @@
       						 <div class="media" id="media_m">
       								<img class="align-self-start mr-3"  t-att-src="post['img']" t-att-alt="post['name']" style="width:70px" />
       							<div id="author_m"  class="media-body">
-       								<h5 id="mt-0" t-esc="post['name']"/>
+       								<h5 class="mt-0" t-esc="post['name']"/>
        							</div>    
        						</div>  
        				</a>
@@ -219,9 +219,9 @@
       				<a t-att-href="post['url']">
       					<div class="media" id="media_r">
       							<img class="align-self-start mr-3" t-att-src="post['img']" t-att-alt="post['name']" style="width:70px" />
-      					</div>
       					<div  id="author_r" class="media-body">	
-       								<h5 id="mt-0" t-esc="post['name']"/>
+       								<h5 class="mt-0" t-esc="post['name']"/>
+       					</div>
        					</div>
        					</a>
        				
