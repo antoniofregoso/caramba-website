@@ -113,7 +113,7 @@
       				<ul t-foreach="blog_post.get_most_read()[0]" t-as="post" class="nav nav-pills nav-stacked">
       				<li>
       				<a t-att-href="post['url']">
-      						 <div class="media" id="media_m">
+      						 <div class="media mb-2" id="media_m">
       								<img class="align-self-start mr-3"  t-att-src="post['img']" t-att-alt="post['name']" style="width:70px" />
       							<div id="author_m"  class="media-body">
        								<h5 class="mt-0" t-esc="post['name']"/>
@@ -154,7 +154,7 @@
       				<ul t-foreach="blog_post.get_most_read()[0]" t-as="post" class="nav nav-pills nav-stacked">
       				<li>
       				<a t-att-href="post['url']">
-      				<div class="thumbnail mt8">
+      				<div class="thumbnail  mb-2">
       				<img  t-att-src="post['img2']" t-att-alt="post['name']"  style="width:100"/>      				
       				</div>
       				
@@ -217,7 +217,7 @@
       				<ul t-foreach="blog_post.get_related_topics()[0]" t-as="post" class="nav nav-pills nav-stacked">
       				<li>
       				<a t-att-href="post['url']">
-      					<div class="media" id="media_r">
+      					<div class="media mb-2" id="media_r">
       							<img class="align-self-start mr-3" t-att-src="post['img']" t-att-alt="post['name']" style="width:70px" />
       					<div  id="author_r" class="media-body">	
        								<h5 class="mt-0" t-esc="post['name']"/>
@@ -258,7 +258,7 @@
       				<ul t-foreach="blog_post.get_related_topics()[0]" t-as="post" class="nav nav-pills nav-stacked">
       				<li>
       				<a t-att-href="post['url']">
-      				<div class="thumbnail mt8">
+      				<div class="thumbnail  mb-2">
       				<img  t-att-src="post['img2']" t-att-alt="post['name']"  style="width:100"/>      				
       				</div>
       				<div id="rb_title"><h5 id="media-title_r" t-esc="post['name']"/></div>
