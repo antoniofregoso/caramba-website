@@ -15,13 +15,13 @@
 		    <div class="col-sm-8"  t-ignore="True" id="main_column">
 			    <div id="blog_content" t-field="blog_post.content" class="blog_content mt32"/>
 			      <div class="o_blog_post_complete o_rc_sharing_links" id="social_sharing_rc">
-	            <a class="fa fa-twitter-square o_twitter_complete" id="o_twitter_complete"></a>
-	            <a class="fa fa-facebook-square o_facebook_complete" id="o_facebook_complete"></a>
-	            <a class="fa fa-linkedin-square o_linkedin_complete" id="o_linkedin_complete"></a>
-	            <a class="fa fa-google-plus-square o_google_complete" id="o_google_complete"></a>
-	        </div>
+		            <a class="fa fa-twitter-square o_twitter_complete" id="o_twitter_complete"></a>
+		            <a class="fa fa-facebook-square o_facebook_complete" id="o_facebook_complete"></a>
+		            <a class="fa fa-linkedin-square o_linkedin_complete" id="o_linkedin_complete"></a>
+		            <a class="fa fa-google-plus-square o_google_complete" id="o_google_complete"></a>
+		        </div>
 		     </div>
-		     <div class="col-lg-3 col-lg-offset-1 col-sm-4" id="blog_post_right_column"/> 
+		     <div class="col-xl-3 offset-xl-1 col-md-4 pt-2" id="blog_post_right_column"/> 
 	  </div>
   </div>
   	<div id="post-widgets">
@@ -78,18 +78,17 @@
 <template id="opt_post_rc_most" name="Most read" priority="6"
         inherit_id="post_right_column" active="False" customize_show="True">
     <xpath expr="//div[@id='blog_post_right_column']" position="inside">
-        <section class="mt32">
+        <section class="mb-3">
         <h4>Most Read</h4>
-        <ul t-foreach="blog_post.get_most_read()[0]" t-as="post" class="nav nav-pills nav-stacked">
-      		<li>
+        <ul t-foreach="blog_post.get_most_read()[0]" t-as="post" class="list-group ">
+      		<li  class="list-group-item mb-2">
       			<a t-att-href="post['url']">
-      			<div id="l_m">
+      			<div id="l_m" class="mb-1">
       			<span t-esc="post['name']"/>
       			</div>
-      			</a>      			
-       			<br />
+      			</a>  
       		</li>
-      	</ul>     
+      	</ul> 
         </section>
     </xpath>
 </template>
@@ -97,85 +96,77 @@
 <template id="opt_post_rc_most_detail" name="Date and Views" 
 	inherit_id="opt_post_rc_most" active="False" customize_show="True">
 	<xpath expr="//div[@id='l_m']" position="after">
-	<div class="clearfix" >
-			<div class="pull-left" ><span  t-esc="post['published']" /></div>
-			<div class="pull-right"  ><span class="fa fa-eye" role="img" aria-label="Views" title="Views"></span > <span t-esc="post['visits']" /></div>
-	</div>		
+			<div class="float-left" ><span  t-esc="post['published']" /></div>
+			<div class="float-right"  ><span class="fa fa-eye" role="img" aria-label="Views" title="Views"></span > <span t-esc="post['visits']" /></div>
 	</xpath>
 </template>
 
 <template id="opt_post_rc_most_tmb" name="Most read with thumbnail" priority="6"
         inherit_id="post_right_column" active="False" customize_show="True">
     <xpath expr="//div[@id='blog_post_right_column']" position="inside">
-        <section class="mt32">
+        <section class="mb-3">
         	<h4>Most Read</h4>
-        		<div class="">
-      				<ul t-foreach="blog_post.get_most_read()[0]" t-as="post" class="nav nav-pills nav-stacked">
-      				<li>
+      				<ul t-foreach="blog_post.get_most_read()[0]" t-as="post" class="list-group">
+      				<li class="list-group-item mb-2">
       				<a t-att-href="post['url']">
-      						 <div class="media mb-2" id="media_m">
-      								<img class="align-self-start mr-3"  t-att-src="post['img']" t-att-alt="post['name']" style="width:70px" />
+      						 <div class="media mb-1" id="media_m">
+      								<img class="align-self-center mr-3"  t-att-src="post['img']" t-att-alt="post['name']" style="width:80px" />
       							<div id="author_m"  class="media-body">
-       								<h5 class="mt-0" t-esc="post['name']"/>
+       								<p class="mt-0" t-esc="post['name']"/>
        							</div>    
        						</div>  
        				</a>
        				
        				</li>
        				</ul>
-       				</div>
        				</section>
        				</xpath>
        				</template>
        				
 <template id="opt_post_rc_most_tmb_author" name="Author" 
 	inherit_id="opt_post_rc_most_tmb" active="False" customize_show="True">
-	<xpath expr="//div[@id='author_m']/h5" position="after">
-			<h6><span class="fa fa-user-circle-o" aria-label="Author" title="Author"></span > <span t-esc="post['author']" /></h6>
+	<xpath expr="//div[@id='author_m']/p" position="after">
+			<h6 class="mt-1 float-right"><span class="fa fa-user-circle-o" aria-label="Author" title="Author"></span > <span t-esc="post['author']" /></h6>
 	</xpath>
 </template>
 
 <template id="opt_post_rc_most_tmb_detail" name="Date and Views" 
 	inherit_id="opt_post_rc_most_tmb" active="False" customize_show="True">
 	<xpath expr="//div[@id='media_m']" position="after">
-	<div class="clearfix" >
-			<div class="pull-left" ><span  t-esc="post['published']" /></div>
-			<div class="pull-right"  ><span class="fa fa-eye" role="img" aria-label="Views" title="Views"></span > <span t-esc="post['visits']" /></div>
-	</div>		
+			<div class="float-left" ><span  t-esc="post['published']" /></div>
+			<div class="float-right"  ><span class="fa fa-eye" role="img" aria-label="Views" title="Views"></span > <span t-esc="post['visits']" /></div>
+		
 	</xpath>
 </template>
 
 <template id="opt_post_rc_most_big" name="Most read Big" priority="6"
 	inherit_id="post_right_column" active="False" customize_show="True">
 	<xpath expr="//div[@id='blog_post_right_column']" position="inside">
-		<section class="mt32">
+		<section class="mb-3">
         	<h4>Most Read</h4>
-        	<div class="">
-      				<ul t-foreach="blog_post.get_most_read()[0]" t-as="post" class="nav nav-pills nav-stacked">
-      				<li>
+      				<t t-foreach="blog_post.get_most_read()[0]" t-as="post" >
+      				<div class="card mb-2">
       				<a t-att-href="post['url']">
-      				<div class="thumbnail  mb-2">
-      				<img  t-att-src="post['img2']" t-att-alt="post['name']"  style="width:100"/>      				
-      				</div>
+      				<img  class="card-img-top" t-att-src="post['img2']" t-att-alt="post['name']" />      				
       				
-      				<div id="mb_title" ><h5 id="media-title_mb" t-esc="post['name']"/></div>
+      				
+      				<div id="mb_title" class="card-body py-1" >
+      					<p class="card-text" id="media-title_mb" t-esc="post['name']"/>
+      				</div>
       				</a>
        				
-      				</li>
-      				</ul>
-      	 		</div>       		
+      				</div>
+      				</t>		
         </section>	
 	</xpath>
 </template>
 
 <template id="opt_post_rc_most_detail_b" name="Date and Views" 
 	inherit_id="opt_post_rc_most_big" active="False" customize_show="True">
-	<xpath expr="//h5[@id='media-title_mb']" position="after">
-	<div class="clearfix" >
-			<div class="pull-left" ><span  t-esc="post['published']" /></div>
-			<div class="pull-right"  ><span class="fa fa-eye" role="img" aria-label="Views" title="Views"></span > <span t-esc="post['visits']" /></div>
-	</div>		
-	</xpath>
+	<xpath expr="//p[@id='media-title_mb']" position="after">
+			<div class="float-left" ><span  t-esc="post['published']" /></div>
+			<div class="float-right"  ><span class="fa fa-eye" role="img" aria-label="Views" title="Views"></span > <span t-esc="post['visits']" /></div>
+		</xpath>
 </template>
        						
        						
@@ -183,17 +174,17 @@
 <template id="opt_post_rc_related" name="Related topics" priority="8"
 		inherit_id="post_right_column" active="False" customize_show="True">
 	<xpath expr="//div[@id='blog_post_right_column']" position="inside">
-		<section class="mt32">
+		<section class="mb-3">
         	<h4>Related Topics</h4>
-        	<ul t-foreach="blog_post.get_related_topics()[0]" t-as="post" class="nav nav-pills nav-stacked">
-        		<li>
+        	<ul t-foreach="blog_post.get_related_topics()[0]" t-as="post" class="list-group">
+        		<li  class="list-group-item  mb-2">
         			<a t-att-href="post['url']">
-        				<div id="l_r">
+        				<div id="l_r" class="mb-1">
         					<span t-esc="post['name']"/>
         				</div>
         			</a>
-        			<br /></li>
-        	</ul>        		
+        			</li>
+        	</ul>       		
         </section>	
 	</xpath>	
 </template>
@@ -201,82 +192,72 @@
 <template id="opt_post_rc_related_detail" name="Date and Views" 
 	inherit_id="opt_post_rc_related" active="False" customize_show="True">
 	<xpath expr="//div[@id='l_r']" position="after">
-	<div class="clearfix" >
-			<div class="pull-left" ><span  t-esc="post['published']" /></div>
-			<div class="pull-right"  ><span class="fa fa-eye" role="img" aria-label="Views" title="Views"></span > <span t-esc="post['visits']" /></div>
-	</div>		
+			<div class="float-left" ><span  t-esc="post['published']" /></div>
+			<div class="float-right"  ><span class="fa fa-eye" role="img" aria-label="Views" title="Views"></span > <span t-esc="post['visits']" /></div>
 	</xpath>
 </template>
 
 <template id="opt_post_rc_related_tmb" name="Related topics with thumbnail" priority="8"
 	inherit_id="post_right_column" active="False" customize_show="True">
 	<xpath expr="//div[@id='blog_post_right_column']" position="inside">
-		<section class="mt32">
+		<section class="mb-3">
         	<h4>Related Topics</h4>
-        	<div class="">
-      				<ul t-foreach="blog_post.get_related_topics()[0]" t-as="post" class="nav nav-pills nav-stacked">
-      				<li>
+      				<ul t-foreach="blog_post.get_related_topics()[0]" t-as="post" class="list-group">
+      				<li class="list-group-item mb-2">
       				<a t-att-href="post['url']">
-      					<div class="media mb-2" id="media_r">
-      							<img class="align-self-start mr-3" t-att-src="post['img']" t-att-alt="post['name']" style="width:70px" />
+      					<div class="media mb-1" id="media_r">
+      							<img class="align-self-center mr-3" t-att-src="post['img']" t-att-alt="post['name']" style="width:80px" />
       					<div  id="author_r" class="media-body">	
-       								<h5 class="mt-0" t-esc="post['name']"/>
+       								<p class="mt-0" t-esc="post['name']"/>
        					</div>
        					</div>
        					</a>
        				
       				</li>
-      				</ul>
-      	 		</div>       		
+      				</ul> 		
         </section>	
 	</xpath>
 </template>
 
 <template id="opt_post_rc_related_tmb_author" name="Author" 
 	inherit_id="opt_post_rc_related_tmb" active="False" customize_show="True">
-	<xpath expr="//div[@id='author_r']/h5" position="after">
-			<h6><span class="fa fa-user-circle-o" aria-label="Author" title="Author"></span > <span t-esc="post['author']" /></h6>
+	<xpath expr="//div[@id='author_r']/p" position="after">
+			<h6 class="mt-1 float-right"><span class="fa fa-user-circle-o" aria-label="Author" title="Author"></span > <span t-esc="post['author']" /></h6>
 	</xpath>
 </template>
 
 <template id="opt_post_rc_related_tmb_detail" name="Date and Views" 
 	inherit_id="opt_post_rc_related_tmb" active="False" customize_show="True">
 	<xpath expr="//div[@id='media_r']" position="after">
-	<div class="clearfix" >
-			<div class="pull-left" ><span  t-esc="post['published']" /></div>
-			<div class="pull-right"  ><span class="fa fa-eye" role="img" aria-label="Views" title="Views"></span > <span t-esc="post['visits']" /></div>
-	</div>		
+			<div class="float-left" ><span  t-esc="post['published']" /></div>
+			<div class="float-right"  ><span class="fa fa-eye" role="img" aria-label="Views" title="Views"></span > <span t-esc="post['visits']" /></div>	
 	</xpath>
 </template>
 
 <template id="opt_post_rc_related_big" name="Related topics Big" priority="8"
 	inherit_id="post_right_column" active="False" customize_show="True">
 	<xpath expr="//div[@id='blog_post_right_column']" position="inside">
-		<section class="mt32">
+		<section class="mb-3">
         	<h4>Related Topics</h4>
-        	<div class="">
-      				<ul t-foreach="blog_post.get_related_topics()[0]" t-as="post" class="nav nav-pills nav-stacked">
-      				<li>
+      				<t t-foreach="blog_post.get_related_topics()[0]" t-as="post" >
+      				<div class="card mb-2">
       				<a t-att-href="post['url']">
-      				<div class="thumbnail  mb-2">
-      				<img  t-att-src="post['img2']" t-att-alt="post['name']"  style="width:100"/>      				
+      				<img  class="card-img-top" t-att-src="post['img2']" t-att-alt="post['name']"  />   
+      				<div id="rb_title" class="card-body py-1">
+      					<p class="card-text" id="media-title_r" t-esc="post['name']"/>
       				</div>
-      				<div id="rb_title"><h5 id="media-title_r" t-esc="post['name']"/></div>
       				</a>       				
-      				</li>
-      				</ul>
-      	 		</div>       		
+      				</div>
+      				</t>		
         </section>	
 	</xpath>
 </template>
 
 <template id="opt_post_rc_related_detail_b" name="Date and Views" 
 	inherit_id="opt_post_rc_related_big" active="False" customize_show="True">
-	<xpath expr="//h5[@id='media-title_r']" position="after">
-	<div class="clearfix" >
-			<div class="pull-left" ><span  t-esc="post['published']" /></div>
-			<div class="pull-right"  ><span class="fa fa-eye" role="img" aria-label="Views" title="Views"></span > <span t-esc="post['visits']" /></div>
-	</div>		
+	<xpath expr="//p[@id='media-title_r']" position="after">
+			<div class="float-left" ><span  t-esc="post['published']" /></div>
+			<div class="float-right"  ><span class="fa fa-eye" role="img" aria-label="Views" title="Views"></span > <span t-esc="post['visits']" /></div>		
 	</xpath>
 </template>
 
@@ -289,22 +270,19 @@
 <template id="opt_creative_commons" name="Creative Commons 4.0" priority="20"
         inherit_id="post_right_column" active="False" customize_show="True">
     <xpath expr="//div[@id='blog_post_right_column']" position="inside">
-        <section class="mt32">
+        <section class="mb-3">
         <h4>Copyright</h4>
-         <div style="text-align:center;" >
-        <t t-foreach="blog_post.get_cc()" t-as="cc">
-         <a style="text-align:center;" rel="license" t-att-href="cc['lc_url']" ><img alt="License Creative Commons" clas="item-photo " t-att-src="cc['lc_img']" /></a><br />
-         <t t-if="cc['lc_metadata_title']" ><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title" t-esc="blog_post.name" /></t>
-         <t t-if="not cc['lc_metadata_title']" >This work</t>         
-         <t t-if="cc['lc_metadata_attribution']=='author'" > by <span xmlns:cc="http://creativecommons.org/ns#" property="cc:attributionName" t-esc="blog_post.get_author()" /></t>
-         <t t-if="cc['lc_metadata_attribution']=='company'" > by <span xmlns:cc="http://creativecommons.org/ns#" property="cc:attributionName" t-esc="blog_post.get_company()" /></t> 
-         is licensed under a<br />          
-        <ul class="nav nav-pills nav-stacked">
-        <li>
-         <a rel="license" t-att-href="cc['lc_url']"><t t-esc="cc['lc_text']" /></a> 
-        </li>
-        </ul>
-         </t>
+         <div class="card text-center">
+         	<div class="card-body">
+		        <t t-foreach="blog_post.get_cc()" t-as="cc">
+		         <a  rel="license" t-att-href="cc['lc_url']" ><img alt="License Creative Commons" clas="item-photo " t-att-src="cc['lc_img']" /></a>
+		         <t t-if="cc['lc_metadata_title']" ><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title" t-esc="blog_post.name" /></t>
+		        <p class="card-text mt-1"> <t t-if="not cc['lc_metadata_title']" >This work</t>         
+		         <t t-if="cc['lc_metadata_attribution']=='author'" > by <span xmlns:cc="http://creativecommons.org/ns#" property="cc:attributionName" t-esc="blog_post.get_author()" /></t>
+		         <t t-if="cc['lc_metadata_attribution']=='company'" > by <span xmlns:cc="http://creativecommons.org/ns#" property="cc:attributionName" t-esc="blog_post.get_company()" /></t> 
+		         is licensed under a <a rel="license" t-att-href="cc['lc_url']"><t t-esc="cc['lc_text']" /></a> </p>
+		         </t>
+         	</div>
         </div>
         </section>
     </xpath>

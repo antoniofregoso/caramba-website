@@ -22,13 +22,24 @@ class BlogPost(models.Model):
 
     @api.one
     def get_author(self):
-        author = self.env['res.partner'].sudo().search_read([('id','=',self.author_id)], ['name'])
-        return author
+        #author = self.env['res.partner'].sudo().search_read([('id','=',self.author_id)], ['name'])
+        
+        return  self.sudo().author_id.name
     
     @api.one
     def get_company(self):
         company = self.env['res.partner'].sudo().search_read([('id','=',self.blog_id.company_id)], ['name'])
         return company
+    
+    @api.one
+    def get_author_slug(self):
+        slug = self.sudo().author_id.name.strip().lower().replace(' ','-') + '-' + str(self.sudo().author_id.id)
+        return slug
+         
+    @api.one         
+    def get_cover_url(self):
+        img_url = '/website_blog/static/src/img/cover_' + str(self.id) + '.jpg'
+        return  img_url   
         
     @api.one
     def get_cc(self):        
