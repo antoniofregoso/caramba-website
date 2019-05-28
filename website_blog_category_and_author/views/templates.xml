@@ -44,7 +44,7 @@
     </template>
     
     	
-	<template id="blog_post_short_seo" name="Blog Posts "  inherit_id="website_blog.blog_post_short"
+	<template id="blog_post_short_seo" name="Blog Posts Whith Category"  inherit_id="website_blog.blog_post_short"
 	customize_show="True" active="False" >
 		<xpath expr="//section[hasclass('mb0')]" position="replace">
 		</xpath>
